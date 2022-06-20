@@ -38,7 +38,7 @@ const ApiSection = () => {
         
       </div>
 
-      {shortenedLinks.map(link => <Link shortenedLink={link}/> )}
+      {shortenedLinks.map(link => <Link key={link.shortLink} shortenedLink={link}/> )}
 
     </div>
   )

@@ -8,7 +8,7 @@ const HeroBanner = () => {
         <div className={HBstyles["hero-banner-left"]}>
             <div className={HBstyles["text"]}>
                 <h1 className={HBstyles["banner-heading"]}>More than just shorter links</h1>
-                <p>Build your brand's recognition and get detailed insights on how your links are performing</p>
+                <p>{"Build your brand's recognition and get detailed insights on how your links are performing"}</p>
             </div>
 
             <button className={HBstyles["get-started-button"]}>
