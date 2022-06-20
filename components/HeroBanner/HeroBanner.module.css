@@ -1,0 +1,40 @@
+.hero-banner-container {
+    display: flex; 
+    gap: 0rem;
+    padding: 3rem 6rem; 
+    padding-right: 0;
+
+    overflow-x: hidden;
+}
+
+.banner-heading {
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+.get-started-button {
+    border: none; 
+    border-radius: 1rem;
+    padding: 0.47rem 1.8rem;
+
+    background-color: var(--primary-cyan);
+    color: white;
+   
+    cursor: pointer;
+    transition: opacity 400ms;
+
+    margin-top: 1.5rem;
+}
+
+.get-started-button:hover{opacity: 0.5;}
+
+.banner-image {
+   position: relative;
+   width: 1000px;
+   right: -100px;
+   top: -50px;
+
+   overflow-x: hidden;
+}
+

@@ -1,0 +1,48 @@
+.navbar-container {
+    display: flex; 
+    padding: 2rem 6rem; 
+
+    justify-content: space-between;
+}
+
+.left-text-container {
+    display: flex; 
+    gap: 1.5rem;
+}
+
+.logo {
+    width: 121px; height: 33px; 
+
+}
+
+.links {
+    display: flex; 
+    gap: 1rem;
+}
+
+.right-text-container {
+    display: flex; 
+    gap: 1rem;
+}
+
+.login-button {
+    background: none;
+    border: none; 
+}
+.signup-button {
+    border: none; 
+    border-radius: 1rem;
+    padding: 0.7rem 1.4rem;
+
+    background-color: var(--primary-cyan);
+    color: white;
+   
+    cursor: pointer;
+    transition: opacity 400ms;
+
+    
+}
+
+.signup-button:hover{
+    opacity: 0.5;
+}

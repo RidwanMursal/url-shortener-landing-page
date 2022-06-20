@@ -1,0 +1,35 @@
+.container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    
+    padding: 0rem 6rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.top {
+    text-align: center;
+}
+
+.bottom {
+    /* display: flex; 
+    gap: 1rem; */
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 300px; */
+    gap: 1rem;
+}
+
+.line {
+    border-width: 0.4rem; 
+    border-color: var(--primary-cyan);
+    border-style: solid;
+    width: 100%;
+
+    position: absolute;
+    top: 15rem;
+    width: 80%;
+}

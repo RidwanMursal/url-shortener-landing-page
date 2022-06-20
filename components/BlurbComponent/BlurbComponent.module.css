@@ -1,0 +1,27 @@
+.container {
+    background-color: white; 
+    padding: 1.5rem;
+
+    width: 400px;
+    height: 250px;
+
+    position:relative; 
+    z-index: 2;
+}
+
+.image {
+    background-color: var(--primary-dark-violet); 
+    padding: 1rem;
+    border-radius: 2.5rem;
+    max-width: 76px; max-height: 76px;
+
+    position:absolute;
+    z-index: 2;
+    top:-40px;
+    left: 45px 
+}
+
+.heading{
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+}

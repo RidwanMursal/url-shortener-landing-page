@@ -1,0 +1,19 @@
+
+
+.heading {
+    color: white;
+    font-weight: 700; 
+    margin-bottom: 1rem;
+     
+}
+
+.p {
+    color: rgb(214, 214, 214); 
+    font-size: 0.8rem;
+    font-weight: 100;
+
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+}
+
+.p:hover {color: var(--primary-cyan)}
