@@ -1,6 +1,6 @@
 import styles from './Footer.module.css'
 import {AiFillFacebook, AiOutlineInstagram, AiOutlineTwitter} from "react-icons/ai"
-import {BsPinterest} from "react-icons/Bs"
+import {BsPinterest} from "react-icons/bs"
 import FooterLinks from '../FooterLinks/FooterLinks'
 
 const Footer = () => {
