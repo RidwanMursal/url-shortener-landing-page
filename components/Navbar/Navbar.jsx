@@ -1,8 +1,12 @@
 import styles from "./Navbar.module.css"
 import logo from "../../images/logo.svg"
+import {GiHamburgerMenu} from "react-icons/gi"
+import MobileNavigation from "../MobileNavigation/MobileNavigation"
+import { useState } from "react"
 
 const Navbar = () => {
   console.log(styles)
+  const [menueClosed, setMenueClosed] = useState(true)
   return (
     <div className={styles["navbar-container"]}>
       <div className={styles["left-text-container"]}>
@@ -19,6 +23,11 @@ const Navbar = () => {
           <button className={styles["login-button"]}>Login</button>
           <button className={styles["signup-button"]}>Sign Up</button>
       </div>
+
+      <GiHamburgerMenu className={styles["hamburger-menue"]} onClick={() => setMenueClosed(!menueClosed)}/>
+
+      <MobileNavigation menueClosed={menueClosed} /> 
+      
     </div>
   )
 }

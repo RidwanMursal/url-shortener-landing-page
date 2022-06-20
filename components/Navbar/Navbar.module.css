@@ -46,3 +46,27 @@
 .signup-button:hover{
     opacity: 0.5;
 }
+
+.hamburger-menue {
+    display: none; 
+    font-size: 2rem;
+    color: var(--neutral-gray); 
+    cursor: pointer; 
+}
+
+@media (max-width:1000px) {
+    .navbar-container {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .right-text-container, .links {
+        display: none; 
+    }
+
+    .hamburger-menue {
+        display: block; 
+    }
+}

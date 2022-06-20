@@ -35,3 +35,9 @@
 .btn:hover{
     opacity: 0.5;
 }
+
+@media (max-width: 800px) {
+    .links-container {
+        flex-direction: column;
+    }
+}

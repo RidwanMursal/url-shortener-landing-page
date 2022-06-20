@@ -38,3 +38,31 @@
    overflow-x: hidden;
 }
 
+@media (max-width: 1000px) {
+    .hero-banner-container {
+        padding: 2rem 1rem;
+    }
+    .banner-image{
+        top: -20px;
+        right: -80px;
+    }
+
+    .banner-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero-banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-image {
+        width: 160%;
+        right: 0;
+    }
+
+    .hero-banner-left {
+        text-align: center;
+    }
+}

@@ -24,12 +24,41 @@
 }
 
 .line {
-    border-width: 0.4rem; 
-    border-color: var(--primary-cyan);
-    border-style: solid;
+    border-top-width: 0.4rem; 
+    border-top-color: var(--primary-cyan);
+    border-top-style: solid;
     width: 100%;
 
     position: absolute;
     top: 15rem;
     width: 80%;
 }
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0rem 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        overflow: hidden; 
+        /* did this because the line overflows, but i want the line to span this entire section */
+    }
+    .bottom {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .line {
+        border-top: none;
+        border-left: 0.4rem var(--primary-cyan) solid;
+        height: 100%;
+
+        left: 50%;
+        
+    }
+}
+
+

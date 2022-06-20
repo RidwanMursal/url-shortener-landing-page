@@ -1,7 +1,6 @@
 .container {
     /* display: flex; 
     flex-direction: column; */
-    margin-top: 0;
     padding: 3rem 6rem;
     padding-bottom: 0rem;
 
@@ -48,4 +47,24 @@
 
 .btn:hover{
     background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 1000px) {
+    /* .input{padding: 0px 0px; width: 40%} */
+
+    
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin-top: 6rem;
+        padding: 0rem 1rem;
+    }
+    .input-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .input {width: 80%;}
 }

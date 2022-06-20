@@ -3,13 +3,16 @@
     padding: 1.5rem;
 
     width: 400px;
-    height: 250px;
+    height: 350px;
+    padding: 2rem 2rem;
+    /* use padding to style components with text inside since it works well responsively */
 
     position:relative; 
     z-index: 2;
 }
 
 .image {
+    width:100%;
     background-color: var(--primary-dark-violet); 
     padding: 1rem;
     border-radius: 2.5rem;
@@ -25,3 +28,32 @@
     margin-top: 2rem;
     margin-bottom: 0.7rem;
 }
+
+@media (max-width: 1250px) {
+    .container {
+        width: auto; 
+        height: auto; 
+    }  
+    
+    
+}
+
+@media (max-width: 700px) {
+    .image {
+        
+        left: 135px;
+        
+       
+    }
+}
+
+@media (max-width: 375px) {
+    .image {
+        
+        left: 107px;
+        
+       
+    }
+}
+
+
