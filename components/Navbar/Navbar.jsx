@@ -11,14 +11,15 @@ const Navbar = () => {
       <div className={styles["left-text-container"]}>
         <img src={logo.src} alt="" className={styles["logo"]} />
         <div className={styles["links"]}>
-          <p>Features</p>
-          <p>Pricing</p>
-          <p>Resources</p>
+          <p className={styles.p}>Features</p>
+          <p className={styles.p}>Pricing</p>
+          <p className={styles.p}>Resources</p>
         </div>
       </div>
 
       <div className={styles["right-text-container"]}>
-        
+
+          {/* <p className={styles.p}>Login</p> */}
           <button className={styles["login-button"]}>Login</button>
           <button className={styles["signup-button"]}>Sign Up</button>
       </div>
