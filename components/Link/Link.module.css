@@ -1,4 +1,4 @@
-.links-container {
+.links-container, .mobile-container {
     display: flex; 
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,35 @@
     gap: 1rem;
 }
 
-.btn {
+.a {
+    text-decoration: none;
+    color: black;
+    margin: 0.5rem 1rem;
+    
+}
+
+.p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    display: inline-block;
+    width: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+@media (max-width: 480px) {
+    .p{width:240px}
+}
+
+.short-link {
+    color: var(--primary-cyan);
+    margin: 0.5rem 1rem;
+}
+
+.btn, .btn-copied {
     border: none; 
     border-radius: 0.5rem;
     padding: 0.7rem 1.4rem;
@@ -29,15 +57,41 @@
     cursor: pointer;
     transition: opacity 400ms;
 
-    
 }
 
-.btn:hover{
+.btn-copied {background-color: var(--primary-dark-violet) }
+
+.btn:hover, .btn-copied:hover{
     opacity: 0.5;
 }
 
-@media (max-width: 800px) {
+.mobile-container {
+    display: None; 
+    flex-direction: column;
+    padding: 1.5rem 0rem;
+    gap: 1rem; 
+    align-items: flex-start;
+    /* white-space: nowrap; */
+    
+
+}
+
+.line {
+    border: solid var(--neutral-gray) 1px;
+    width: 100%;
+}
+@media (max-width: 650px) {
     .links-container {
-        flex-direction: column;
+        display: none; 
+    }
+
+    .mobile-container {
+        display: flex; 
+    }
+
+    .btn, .btn-copied {
+        width: 90%; 
+        border-radius: 0.2rem;
+        margin: 0rem auto;
     }
 }

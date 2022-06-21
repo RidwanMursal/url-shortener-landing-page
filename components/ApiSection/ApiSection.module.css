@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Poppins italcs";
+    src: url("../../Poppins/Poppins-MediumItalic.ttf");
+}
+
 .container {
     /* display: flex; 
     flex-direction: column; */
@@ -25,16 +30,37 @@
 
 }
 
-.input {
-    width: 85%; 
-    padding: 0.5rem 1rem;
-    border-radius: 0.4rem;
+.d {
+
+    width: 100%;
 }
+
+.input {
+    width: 100%; 
+    padding:  0.8rem 1rem;
+    border-radius: 0.4rem;
+    margin-bottom:0.3rem;
+}
+
+.input-error {
+    border-color: var(--secondary-red); 
+}
+
+.input-error:focus{outline:none}
+
+.error {
+    font-family: "Poppins italcs";
+    color: var(--secondary-red); 
+    font-size: 0.9rem;
+    padding-left: 0.2rem;
+}
+
+
 
 .btn {
     border: none; 
     border-radius: 0.5rem;
-    padding: 0.7rem 1.4rem;
+    padding: 0.3rem 1.4rem;
 
     background-color: var(--primary-cyan);
     color: white;
@@ -66,5 +92,9 @@
         padding: 1rem;
     }
 
-    .input {width: 80%;}
+    .input {width: 100%;}
+
+    
+
+    
 }
