@@ -2,8 +2,6 @@ import styles from "./BlurbComponent.module.css"
 
 const BlurbComponent = ({cardInfo}) => {
   const {heading, image, blurb, id} = cardInfo
-  console.log("heading", heading)
-  console.log("blurb", heading)
   
   return (
     <div id={id} className={styles.container}>

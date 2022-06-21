@@ -1,19 +1,8 @@
-import React from 'react'
+import { copyToClipboard } from "./utils"
 import styles from "./Link.module.css"
 
 const Link = ({shortenedLink}) => {
   const {longLink, shortLink} = shortenedLink
-  console.log("this is the shortlink") 
-  const copyToClipboard = (e, shortLink) => {
-    // Edit button text and class 
-    e.target.textContent = "Copied"
-    e.target.classList.remove(styles.btn) 
-    e.target.classList.add(styles["btn-copied"])
-
-    //Copy value to clipboard 
-    navigator.clipboard.writeText(shortLink)
-  }
-  
   
   return (
     <>

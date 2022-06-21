@@ -2,22 +2,9 @@ import styles from './Footer.module.css'
 import {AiFillFacebook, AiOutlineInstagram, AiOutlineTwitter} from "react-icons/ai"
 import {BsPinterest} from "react-icons/bs"
 import FooterLinks from '../FooterLinks/FooterLinks'
+import { footerItems } from './data'
 
 const Footer = () => {
-  const footerItems = [
-      {
-          heading: "Features", 
-          content: ["Link Shortening", "Branded Linkes", "Analytics"]
-      }, 
-      {
-          heading: "Resources", 
-          content: ["Blog", "Development", "Support"], 
-      }, 
-      {
-          heading: "Company", 
-          content: ["About", "Our Team", "Careers", "Contact"]
-      }
-  ]
   return (
     <div className={styles.container}>
         <h2 className={styles.logo}>Shortly</h2>

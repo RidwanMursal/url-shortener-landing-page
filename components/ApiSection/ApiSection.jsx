@@ -1,5 +1,6 @@
 import Link from "../Link/Link"
 import styles from "./ApiSection.module.css"
+import {fetchUrl} from "./utils"
 import { useState } from 'react'
 
 const ApiSection = () => {
@@ -8,31 +9,33 @@ const ApiSection = () => {
   const [validInput, setValidInput] = useState({isValid:true, message:""})
   console.log(shortenedLinks)
 
-  const addLink = (response) => {
-    console.log(response)
-    if (response.ok) {
-      if (!validInput.isValid) setValidInput({isValid:true, message:""})
-      const {result} = response
-      setShortenedLinks([
-        ...shortenedLinks, 
-        {longLink: result.original_link, shortLink: result.full_short_link}
-      ])
-    }else {
-      setValidInput({isValid:false, message: "Not a Valid Link"})
-    }
-  }
+  // const addLink = (response, validInput, setValidInput, shortenedLinks, setShortenedLinks) => {
+  //   console.log(response)
+  //   if (response.ok) {
+  //     if (!validInput.isValid) setValidInput({isValid:true, message:""})
+  //     const {result} = response
+  //     setShortenedLinks([
+  //       ...shortenedLinks, 
+  //       {longLink: result.original_link, shortLink: result.full_short_link}
+  //     ])
+  //   }else {
+  //     setValidInput({isValid:false, message: "Not a Valid Link"})
+  //   }
+  // }
 
-  const fetchUrl = async () => {
-    if (input === "") {
-      setValidInput({isValid:false, message:"please input a link"})
-      //alert("please add a link")
-    }else {
-      //console.log(input, "in link")
-      const request = await fetch(`https://api.shrtco.de/v2/shorten?url=${input}`)
-      const shortenedLink = await request.json()
-      addLink(shortenedLink)
-    }
-  }
+  // const fetchUrl = async (validInput, setValidInput, shortenedLinks, setShortenedLinks) => {
+  //   if (input === "") {
+  //     setValidInput({isValid:false, message:"please input a link"})
+  //     //alert("please add a link")
+  //   }else {
+  //     //console.log(input, "in link")
+  //     const request = await fetch(`https://api.shrtco.de/v2/shorten?url=${input}`)
+  //     const shortenedLink = await request.json()
+  //     addLink(shortenedLink, validInput, setValidInput, shortenedLinks, setShortenedLinks)
+  //   }
+  // }
+
+
   return (
     <div className={styles["container"]}>
       <div className={styles["input-container"]}>
@@ -45,7 +48,7 @@ const ApiSection = () => {
         </div>
         
         <div>
-        <button className={styles["btn"]} onClick={() => fetchUrl()}>Shorten it!</button>
+        <button className={styles["btn"]} onClick={() => fetchUrl(validInput, setValidInput, shortenedLinks, setShortenedLinks, input)}>Shorten it!</button>
         </div>
         
         

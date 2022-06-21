@@ -5,7 +5,6 @@ import MobileNavigation from "../MobileNavigation/MobileNavigation"
 import { useState } from "react"
 
 const Navbar = () => {
-  console.log(styles)
   const [menueClosed, setMenueClosed] = useState(true)
   return (
     <div className={styles["navbar-container"]}>

@@ -2,7 +2,7 @@ import HBstyles from './HeroBanner.module.css'
 import illustration from "../../images/illustration-working.svg"
 
 const HeroBanner = () => {
-  console.log(HBstyles)
+  //console.log(HBstyles)
   return (
     <div className={HBstyles["hero-banner-container"]}>
         <div className={HBstyles["hero-banner-left"]}>
