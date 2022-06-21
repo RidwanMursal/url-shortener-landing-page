@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: "Poppins italcs";
     src: url("../../Poppins/Poppins-MediumItalic.ttf");
-}
+} */
 
 .container {
     /* display: flex; 
@@ -49,7 +49,7 @@
 .input-error:focus{outline:none}
 
 .error {
-    font-family: "Poppins italcs";
+    /* font-family: "Poppins italcs"; */
     color: var(--secondary-red); 
     font-size: 0.9rem;
     padding-left: 0.2rem;
